@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
+        <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+                /* Add a gray background color with some padding */
+                body {
+                  font-family: Arial;
+                  padding: 20px;
+                  background: #f1f1f1;
+                }
+                
+                /* Header/Blog Title */
+                .header {
+                  padding: 30px;
+                  font-size: 40px;
+                  text-align: center;
+                  background: white;
+                }
+                
+                /* Create two unequal columns that floats next to each other */
+                /* Left column */
+                .leftcolumn {   
+                  float: left;
+                  width: 75%;
+                }
+                
+                /* Right column */
+                .rightcolumn {
+                  float: left;
+                  width: 25%;
+                  padding-left: 20px;
+                }
+                
+                /* Fake image */
+                .fakeimg {
+                  background-color: #aaa;
+                  width: 100%;
+                  padding: 20px;
+                }
+                
+                /* Add a card effect for articles */
+                .card {
+                   background-color: white;
+                   padding: 20px;
+                   margin-top: 20px;
+                }
+                
+                /* Clear floats after the columns */
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+                
+                /* Footer */
+                .footer {
+                  padding: 20px;
+                  text-align: center;
+                  background: #ddd;
+                  margin-top: 20px;
+                }
+                
+                /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 800px) {
+                  .leftcolumn, .rightcolumn {   
+                    width: 100%;
+                    padding: 0;
+                  }
+                }
+        </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vivek Gupta</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/kokuri.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/highlight.min.css">
+    
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+
+
+    <!-- Timeline -->
+
+    <meta name="theme" content="hugo-academic">
+    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="author" content="Vivek Gupta">
+    <meta name="description" content="Research Scholar">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+
+
+    <!-- Timeline -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    </style>
+
+</head>
+
+<body style="background-color: #bfce3f  ">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+        <div class="container">
+
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                </a>
+
+            </div>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a href="../index.html"> Home</a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html"> Projects</a>
+                    </li>   
+
+                    <li class="active">
+                        <a href="certi.html"> Certifiations</a>
+                    </li>   
+
+	                <li>
+                        <a href="publication.html"> Publcations</a>
+                    </li>
+
+                    <li>
+                        <a href="timemachine.html"> Time Machine</a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <div class="row" style="padding-top: 50px; position: absolute;">
+		
+        <article class="col-md-4 article-intro">
+    
+            <h4>University of Alberta</h4>
+                          
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/AG.png" style="width: 650px; height: 400px;" />
+            </div>
+                
+        </article>
+    
+        <article class="col-md-4 article-intro" style="padding-left:240px;">
+
+            <h4>University of Pennsylvania</h4>
+                                
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/CF.png" style="width: 650px; height: 400px;" />
+            </div>
+    
+        </article>
+
+    </div>
+
+
+   <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 600px; position: absolute;">
+		
+        <article class="col-md-4 article-intro">
+        
+            <h4>University of Alberta</h4>
+                              
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/CN.png" style="width: 650px; height: 400px;" />
+            </div>
+                    
+        </article>
+        
+        <article class="col-md-4 article-intro" style="padding-left:240px;">
+    
+            <h4>Wesleyan University</h4>
+                                    
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/DAT.png" style="width: 650px; height: 400px;" />
+            </div>
+        
+        </article>
+    
+    </div>
+
+
+    <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 1150px; position: absolute;">
+		
+        <article class="col-md-4 article-intro">
+        
+            <h4>Wesleyan University</h4>
+                              
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/DM.png" style="width: 650px; height: 400px;" />
+            </div>
+                    
+        </article>
+        
+        <article class="col-md-4 article-intro" style="padding-left:240px;">
+    
+            <h4>University of Illinois</h4>
+                                    
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/DV.png" style="width: 650px; height: 400px;" />
+            </div>
+        
+        </article>
+    
+    </div>
+
+    <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 1700px; position: absolute;">
+		
+        <article class="col-md-4 article-intro">
+            
+            <h4>University of Pennsylvania</h4>
+                                  
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/FM.png" style="width: 650px; height: 400px;" />
+            </div>
+                        
+        </article>
+            
+        <article class="col-md-4 article-intro" style="padding-left:240px;">
+        
+            <h4>Hong Kong University</h4>
+                                        
+            <div class="fakeimg" style="height:440px; width: 700px;">
+                <img src="../images/JS.png" style="width: 650px; height: 400px;" />
+            </div>
+            
+        </article>
+        
+    </div>
+
+
+    <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 2250px; position: absolute;">
+		
+        <article class="col-md-4 article-intro">
+            
+                <h4>Rice University</h4>
+                                  
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/PJ.png" style="width: 650px; height: 400px;" />
+                </div>
+                        
+        </article>
+            
+        <article class="col-md-4 article-intro" style="padding-left:240px;">
+        
+                <h4>University of Alberta</h4>
+                                        
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/PM.png" style="width: 650px; height: 400px;" />
+                </div>
+            
+        </article>
+        
+    </div>
+
+
+
+
+
+    <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 2800px; position: absolute;">
+		
+        <article class="col-md-4 article-intro">
+            
+                <h4>University of Alberta</h4>
+                                  
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/RM.png" style="width: 650px; height: 400px;" />
+                </div>
+                        
+        </article>
+            
+        <article class="col-md-4 article-intro" style="padding-left:240px;">
+        
+                <h4>University of Minnesota</h4>
+                                        
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/RS.png" style="width: 650px; height: 400px;" />
+                </div>
+            
+        </article>
+        
+    </div>
+
+
+
+
+    <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 3400px; position: absolute;">
+		
+            <article class="col-md-4 article-intro">
+            
+                <h4>University of London</h4>
+                                  
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/RW.png" style="width: 650px; height: 400px;" />
+                </div>
+                        
+            </article>
+            
+            <article class="col-md-4 article-intro" style="padding-left:240px;">
+        
+                <h4>University of Alberta</h4>
+                                        
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/SP.png" style="width: 650px; height: 400px;" />
+                </div>
+            
+            </article>
+        
+    </div>
+
+
+
+
+
+    <!-- seprate -->
+
+
+    <div class="row" style="padding-top: 4000px; position: absolute;">
+		
+            <article class="col-md-4 article-intro">
+            
+                <h4>University of Michigan</h4>
+                                  
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/AP.png" style="width: 650px; height: 400px;" />
+                </div>
+                        
+            </article>
+            
+            <article class="col-md-4 article-intro" style="padding-left:240px;">
+        
+                <h4>Wesleyan University</h4>
+                                        
+                <div class="fakeimg" style="height:440px; width: 700px;">
+                    <img src="../images/reg.png" style="width: 650px; height: 400px;" />
+                </div>
+            
+            </article>
+        
+    </div>
+
+
+</body>
+
+</html>
