@@ -1,78 +1,80 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-        <style>
-                * {
-                  box-sizing: border-box;
-                }
+    
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
                 
-                /* Add a gray background color with some padding */
-                body {
-                  font-family: Arial;
-                  padding: 20px;
-                  background: #f1f1f1;
-                }
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
                 
-                /* Header/Blog Title */
-                .header {
-                  padding: 30px;
-                  font-size: 40px;
-                  text-align: center;
-                  background: white;
-                }
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: white;
+        }
                 
-                /* Create two unequal columns that floats next to each other */
-                /* Left column */
-                .leftcolumn {   
-                  float: left;
-                  width: 75%;
-                }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+            float: left;
+            width: 75%;
+        }
                 
-                /* Right column */
-                .rightcolumn {
-                  float: left;
-                  width: 25%;
-                  padding-left: 20px;
-                }
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
                 
-                /* Fake image */
-                .fakeimg {
-                  background-color: #aaa;
-                  width: 100%;
-                  padding: 20px;
-                }
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
                 
-                /* Add a card effect for articles */
-                .card {
-                   background-color: white;
-                   padding: 20px;
-                   margin-top: 20px;
-                }
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
                 
-                /* Clear floats after the columns */
-                .row:after {
-                  content: "";
-                  display: table;
-                  clear: both;
-                }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
                 
-                /* Footer */
-                .footer {
-                  padding: 20px;
-                  text-align: center;
-                  background: #ddd;
-                  margin-top: 20px;
-                }
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
                 
-                /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-                @media screen and (max-width: 800px) {
-                  .leftcolumn, .rightcolumn {   
-                    width: 100%;
-                    padding: 0;
-                  }
-                }
-        </style>
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,39 +84,26 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/kokuri.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/highlight.min.css">
-    
-  
-  
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
 
-     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
-
-
-    <!-- Timeline -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme" content="hugo-academic">
     <meta name="generator" content="Hugo 0.16-DEV" />
     <meta name="author" content="Vivek Gupta">
     <meta name="description" content="Research Scholar">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
 
-
-    <!-- Timeline -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <style>
     * {
