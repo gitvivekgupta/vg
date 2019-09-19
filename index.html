@@ -15,20 +15,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+
         @media only screen and (max-width: 600px) {
             .profile-pic {
+
                 float:left;
             }
             .profile-pic2 {
+
                 text-align: center;
             }
+
+            .profile-pic4 {
+                
+                width: 27%; 
+                height: auto; 
+                margin-right: 20px; 
+                margin-top: 100px;
+            }
+
+            .callBarFixed {
+
+                position: fixed;
+                z-index: 999;
+                width: 100%;
+                top: 0;
+            }
+            .subNav {
+
+                justify-content: space-between;
+                top: calc(56px);
+                text-align: center;
+                display: block !important;
+            }
         }
-        .profile-pic4 {
-            width: 27%; 
-            height: auto; 
-            margin-right: 20px; 
-            margin-top: 100px;
-        }
+
+       
 
     </style>
 
@@ -75,6 +97,17 @@
   </div>
 </nav>
 <!-- end navigation -->
+
+<div class="subNav" style="display: none">
+    <div class="sub" style="background:#1c488b;border-right: 3px white solid; width: 50%; float: left; padding: 7px;">
+        <a href="tel:+91 8302674106" onClick="ga('send', 'event', 'call', 'clicktocall');"><i class="fa fa-phone  cal_msg_icn flot_lft"></i> 
+             &nbsp Click to call</a>
+    </div>
+    <div class="sub" style="background:#72b44b; width: 50%; float: left; padding: 7px;">
+        <a href="https://wa.me/918302674106"><i class="fa fa-whatsapp cal_msg_icn flot_lft"></i>  
+             &nbsp WhatsApp</a>		
+    </div>
+</div>
 
 <div class="profile-pic">
     <img src="./images/picc.jpeg" alt="My Pic" class="float-right img-thumbnail img-fluid profile-pic2" style="padding: 14px; margin-top: 30px; margin-right: 2px;">  
@@ -154,6 +187,11 @@
                         <i class="fab fa-facebook"><b>facebook</b></i>
                     </a>
                 </li>
+                <li>
+                    <a itemprop="sameAs" href="https://www.linkedin.com/in/pro-vivek/" target="_blank">
+                        <i class="fab fa-linkedin"><b>Linkedin</b></i>
+                    </a>
+                </li>
             </ul>
     </div>
 
@@ -163,10 +201,10 @@
 
 <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-12" >
-
+<!-- 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="pro-vivek"><a class="LI-simple-link" href='https://in.linkedin.com/in/pro-vivek?trk=profile-badge'>Vivek G.</a></div>
-        </div>
+        </div> -->
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
             <a target='_blank' href='https://www.tripoto.com/profile/vivekgupta'><img src='https://cdn1.tripoto.com/165.6/img/widget/tripoto_approved_blogger_2.jpg' alt='Tripoto'></a>
