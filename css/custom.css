@@ -1,9 +1,11 @@
 @media only screen and (max-width: 600px) {
-  .profile-pic {
+    
+  /* .profile-pic {
 
       float:left;
-  }
-  .profile-pic2 {
+  } */
+
+  /* .profile-pic2 {
 
       text-align: center;
   }
@@ -14,7 +16,7 @@
       height: auto; 
       margin-right: 20px; 
       margin-top: 100px;
-  }
+  } */
 
   .callBarFixed {
 
@@ -30,4 +32,5 @@
       text-align: center;
       display: block !important;
   }
+
 }
