@@ -1,4 +1,4 @@
 # my portfolio
 
 
-https://gitvivekgupta.github.io/vivekgupta/
+https://gitvivekgupta.github.io/vg/
