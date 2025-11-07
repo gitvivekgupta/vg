@@ -22,29 +22,37 @@
             <meta property="og:locale" content="en-us">
 
             <link rel="stylesheet" href="./css/custom.css">
+
+            <!-- Fonts & Styles -->
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-            <!-- Latest compiled and minified CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+            <!-- Scripts -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <!-- Latest compiled JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-            <!-- Popper JS -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+            <!-- Zoho SalesIQ -->
             <script type="text/javascript">
-                var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
-                {widgetcode:"f30398e2e261fdf149a02220ef73f2ea81f94c49c19f33f0f3bdd0289fc3bef4b3be8f78138b11e9bcbb484aec632943", values:{},ready:function(){}};
-                var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-                s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+                var $zoho = $zoho || {};
+                $zoho.salesiq = $zoho.salesiq || {
+                    widgetcode: "f30398e2e261fdf149a02220ef73f2ea81f94c49c19f33f0f3bdd0289fc3bef4b3be8f78138b11e9bcbb484aec632943",
+                    values: {},
+                    ready: function () { }
+                };
+                var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+                s.src = "https://salesiq.zoho.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
             </script>
 
             <!-- Google Tag Manager -->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-NZN2K34R');
+            <script>
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+                    var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+                    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-NZN2K34R');
             </script>
             <!-- End Google Tag Manager -->
 
@@ -53,227 +61,123 @@
         <body style="background-color: #F5F6BD">
             
             <!-- navigation bar START -->
-            <nav class="fluid-container navbar navbar-expand-lg  navbar-light bg-dark">
-                
-                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire"></span></a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="ture" aria-label="Toggle navigation" style="border-color: white;">
-                    <span class="navbar-toggler-icon"></span>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><i class="fas fa-user-graduate text-warning"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    
-                    <ul class="navbar-nav">
-                        
-                        <li class="nav-item ">
-                            <a class="nav-link" style="color: white" href="index.html">|Home|<span class="sr-only">(current)</span></a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white" href="./view/profile/timemachine.html">|Timeline|</a>
-                        </li>
-                
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white" href="./view/profile/publication.html">|Research|</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white" href="./view/profile/accomplishments.html">|Certifications|</a>
-                        </li>
-
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" style="color: white" href="./profile/blog.html">Blog</a>
-                        </li> -->
-
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white" href="https://gvivek.medium.com" target="_blank">|Medium|</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: white" href="https://easylaw.quora.com" target="_blank">|Quora|</a>
-                        </li>
-
-                        <li class="nav-item"></li>
-                            <a class="nav-link" style="color: white" href="https://forms.gle/RCUKHEChCTEXQJoF7" target="_blank">|Consulting|</a>
-                        </li>
-                
-                    </ul>
-                    
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">| Home |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./view/profile/timemachine.html">| Timeline |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./view/profile/publication.html">| Research |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./view/profile/accomplishments.html">| Certifications |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://gvivek.medium.com" target="_blank">| Medium |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://easylaw.quora.com" target="_blank">| Quora |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://forms.gle/RCUKHEChCTEXQJoF7" target="_blank">| Consulting |</a></li>
+                </ul>
                 </div>
-
             </nav>
             <!-- end navigation -->
 
             <div class="subNav" style="display: none">
-                
                 <a href="tel:+91 8302674106" onClick="ga('send', 'event', 'call', 'clicktocall');">
                     <div class="sub" style="background:#1c488b; border-right: 3px white solid; width: 50%; float: left; padding: 7px;">
                         <i class="fa fa-phone"></i>&nbsp Click to call
                     </div>
                 </a>
-                
                 <a href="https://wa.me/918302674106">
                     <div class="sub" style="background:#72b44b; width: 50%; float: left; padding: 7px;">
                         <i class="fab fa-whatsapp"></i>&nbsp WhatsApp	
                     </div>
                 </a>
-                
             </div>
             
             <br>
 
-            <div class="profile-pic">
-                <img src="./images/pic.jpeg" alt="Vivek Gupta Avatar" class="float-right img-thumbnail img-fluid" style="padding: 8px; height: 510px; margin-right:5px;">  
-            </div>
-
-            <div style="margin-top: 80px;">
-                
-                <h1 class="display1 text-center">Abstract Biography</h1><br>
-
-                <p class="text-center"><b>Vivek Gupta</b><br>
-                    <u><b>B.Tech | M.Tech | PGDM | LLB</u><br><br>
-                    Currently, I am working as a Manager(MarTech) at IPG in the Platform & Intelligence Team.<br><br>
+            <!-- Profile -->
+            <div class="container text-center mt-5">
+                <img src="./images/pic.jpeg" alt="Vivek Gupta Avatar" class="img-thumbnail img-fluid">
+                <div class="content-section">
+                <h1>Abstract Biography</h1>
+                <p><b>Vivek Gupta</b><br>
+                    <u><b>B.Tech | M.Tech | PGDM | LLB</b></u><br><br>
+                    Currently, I am working as a Manager (MarTech) at IPG in the Platform & Intelligence Team.<br><br>
                     In my stint of learning pragmatically, I have worked in various functional roles and studied numerous subjects academically.<br>
-                    I have a demonstrated history of working in businesses like EdTech, PropTech, HealthTech & AdTech.<br>
-                    <br><br><br>
+                    I have a demonstrated history of working in businesses like EdTech, PropTech, HealthTech & AdTech.
+                </p>
+                </div>
             </div>
 
             <hr>
 
-            <div class="ml-3 row">
-            
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-1">
-
-                    <h3 class="display3"><b>Skills &amp; Interests</b></h3>
-            
+            <!-- Skills / Repository / Contact -->
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-6">
+                    <h3><b>Skills & Interests</b></h3>
                     <ul class="ul-interests">
-                        <li>Product Management & Consulting</li>
-                        <li>Analytics, Data Science & Machine Learning</li>
-                        <li>Law &amp; Compliance</li>
-                        <li>Business Development &amp; Entrepreneurship</li>
-                        <li>Software Engineering (WEB)</li>
+                    <li>Product Management & Consulting</li>
+                    <li>Analytics, Data Science & Machine Learning</li>
+                    <li>Law & Compliance</li>
+                    <li>Business Development & Entrepreneurship</li>
+                    <li>Software Engineering (WEB)</li>
                     </ul>
-                
                 </div>
 
-                <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-1">
-
-                    <h3 class="display3"><b>Repository</b></h3>
-            
-                        <ul class="ul-interests">
-
-                            <li>
-                                <a itemprop="sameAs" href="https://drive.google.com/file/d/1Dv1dZgpZ1D2aKOfhY0027v8zVxRZstNV/view?usp=sharing" target="_blank">
-                                    <i class="fas fa-award"><b>Resume</b></i>
-                                </a>
-                            </li>
-<!-- 
-                            <li>
-                                <a itemprop="sameAs" href="https://www.codechef.com/users/pinkman61">
-                                    <i class="fas fa-dice-one"><b>Codechef</b></i>
-                                </a>
-                            </li>	 -->
-
-                            <!-- <li>
-                                <a itemprop="sameAs" href="https://www.hackerearth.com/@vivekgupta92750">
-                                    <i class="fas fa-dice-two"><b>Hakerearth</b></i>
-                                </a>
-                            </li> -->
-
-                            <!-- <li>
-                                <a itemprop="sameAs" href="https://leetcode.com/gitvivekgupta/" target="_blank">
-                                    <i class="fas fa-dice-two"><b>Leetcode</b></i>
-                                </a>
-                            </li> -->
-
-                            <li>
-                                <a itemprop="sameAs" href="https://github.com/gitvivekgupta" target="_blank">
-                                    <i class="fab fa-github"><b>Github</b></i>
-                                </a>
-                            </li>
-                            
-                            <!-- <li>
-                                <a itemprop="sameAs" href="https://www.goodreads.com/user/show/66181504-vivek-gupta" target="_blank">
-                                <i class="fab fa-goodreads"><b>Goodreads</b></i>
-                                </a>
-                            </li> -->
-                            
-                        </ul>
-                </div>
-
-                <div class=" col-xl-2 col-lg-2 col-md-2 col-sm-1" >
-
-                    <h3 class="display3"><b>Contact</b></h3>
-                    
+                <div class="col-lg-4">
+                    <h3><b>Repository</b></h3>
                     <ul class="ul-interests">
-                    
-                        <li>
-                            <a itemprop="sameAs" href="mailto:vivek.gupta.cs@pm.me@gmail.com" target="_blank">
-                                <i class="fa fa-envelope"><b>Mail</b></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a itemprop="sameAs" href="https://www.linkedin.com/in/vivekg-/" target="_blank">
-                                <i class="fab fa-linkedin"><b>Linkedin</b></i>
-                            </a>
-
-                        </li>
-
-                        <!-- <li>
-                            <a itemprop="sameAs" href="https://www.quora.com/profile/Vivek-Gupta-5777" target="_blank">
-                                <i class="fab fa-quora"><b>Quora</b></i>
-                            </a>
-                        </li> -->
-
-                        <!-- <li>
-                            <a itemprop="sameAs" href="https://www.facebook.com/vivekgupta.social" target="_blank">
-                                <i class="fab fa-facebook"><b>facebook</b></i>
-                            </a>
-                        </li> -->
-
+                    <li>
+                        <a href="https://drive.google.com/file/d/1Dv1dZgpZ1D2aKOfhY0027v8zVxRZstNV/view?usp=sharing" target="_blank">
+                        <i class="fas fa-award"></i> <b>Resume</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gitvivekgupta" target="_blank">
+                        <i class="fab fa-github"></i> <b>Github</b>
+                        </a>
+                    </li>
                     </ul>
-
                 </div>
 
+                <div class="col-lg-2">
+                    <h3><b>Contact</b></h3>
+                    <ul class="ul-interests">
+                    <li>
+                        <a href="mailto:vivek.gupta.cs@pm.me@gmail.com" target="_blank">
+                        <i class="fa fa-envelope"></i> <b>Mail</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vivekg-/" target="_blank">
+                        <i class="fab fa-linkedin"></i> <b>LinkedIn</b>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
             </div>
 
             <hr>
-
-        
-            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-            <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=AW-368363877"></script>
-            
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'AW-368363877');
-            </script>
-
-            <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZN2K34R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
             
         </body>
 
         <br><br><br><br><br>
 
-        <footer class="col-12 col-xl-12 col-md-12">
-                <p class="display1 text-center">&copy; Copyright 2019 <a href="https://gitvivekgupta.github.io/vg/">Vivek Gupta</a></p>
-                <p class="display1 text-center">Contact: <a href="mailto:vivek.gupta.cs@pm.me">vivek.gupta.cs@pm.me</a></p>
-        </footer>
-
-        <br>
-
-        <div>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2019 <a href="https://gitvivekgupta.github.io/vg/">Vivek Gupta</a></p>
+            <p>Contact: <a href="mailto:vivek.gupta.cs@pm.me">vivek.gupta.cs@pm.me</a></p>
+            <div class="visitor-counter">
             <a href='https://www.counter12.com'>
-                <img src='https://www.counter12.com/img-W6C7Y0448dA715Db-13.gif' border='0' alt='conter12'>
+                <img src='https://www.counter12.com/img-W6C7Y0448dA715Db-13.gif' border='0' alt='visitor counter'>
             </a>
-                <script type='text/html' src='https://www.counter12.com/ad.js?id=W6C7Y0448dA715Db'></script>
-        </div>
+            <script type='text/html' src='https://www.counter12.com/ad.js?id=W6C7Y0448dA715Db'></script>
+            </div>
+        </footer>
 
     </html>
