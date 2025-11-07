@@ -39,6 +39,7 @@
       font-weight: bold;
     }
 
+    /* Navbar */
     nav.navbar {
       background-color: #0d1b2a !important;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
@@ -55,41 +56,66 @@
       color: #f4c430 !important;
     }
 
+    /* Timeline Container */
     #timeline {
       border-left: 3px solid #0d1b2a;
       margin: 60px auto;
-      padding-left: 30px;
+      padding-left: 45px;
       max-width: 900px;
-    }
-
-    .timelineitem {
-      margin-bottom: 40px;
       position: relative;
     }
 
+    /* Each Timeline Item */
+    .timelineitem {
+      margin-bottom: 50px;
+      position: relative;
+      padding-left: 10px;
+    }
+
+    /* Timeline Dot */
     .timelineitem::before {
       content: "";
       position: absolute;
-      left: -9px;
-      top: 8px;
-      width: 15px;
-      height: 15px;
+      left: -29px;
+      top: 5px;
+      width: 18px;
+      height: 18px;
       background-color: #f4c430;
       border: 3px solid #0d1b2a;
       border-radius: 50%;
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
     }
 
+    /* Connecting line gap adjustment for last item */
+    #timeline::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -1.5px;
+      width: 3px;
+      height: 20px;
+      background: #fdfcf8;
+    }
+
+    /* Timeline Text */
     .tdate {
       font-weight: 600;
       color: #0d1b2a;
       font-family: 'Roboto Mono', monospace;
       font-size: 0.95rem;
+      margin-bottom: 4px;
+      margin-left: 5px;
     }
 
     .ttitle {
       font-family: 'Merriweather', serif;
       font-size: 1.15rem;
       color: #1a1a1a;
+      margin-left: 5px;
+    }
+
+    .tdesc {
+      margin-left: 5px;
     }
 
     .tdesc a {
@@ -104,6 +130,7 @@
       text-decoration: underline;
     }
 
+    /* Quote Styling */
     blockquote {
       text-align: center;
       font-style: italic;
@@ -113,8 +140,11 @@
       max-width: 700px;
       border-left: 4px solid #c49b0b;
       padding-left: 20px;
+      background: #fff9e6;
+      border-radius: 4px;
     }
 
+    /* Footer */
     footer {
       background-color: #0d1b2a;
       color: #fff;
@@ -133,6 +163,17 @@
 
     .visitor-counter {
       margin-top: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #timeline {
+        padding-left: 35px;
+      }
+
+      .timelineitem::before {
+        left: -25px;
+      }
     }
   </style>
 
