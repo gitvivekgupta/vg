@@ -97,3 +97,7 @@ footer a:hover {
 .visitor-counter {
   margin-top: 15px;
 }
+
+.cert-card img { transition: transform .3s ease, box-shadow .3s ease; }
+.cert-card img:hover { transform: scale(1.05); box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+.cert-card .card { border-radius: 12px; background-color: #fafafa; transition: all .3s }
